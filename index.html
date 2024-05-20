@@ -2,11 +2,28 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./styles/style.css" />
-        <title>Stop watch</title>
+        <title>Stop Watch</title>
     </head>
     <body>
+        <div class="container">
+            <div class="img-container">
+                <img src="./assets/stop-watch.jpeg" alt="stop-watch" />
+            </div>
+            <div id="time">
+                <span class="hours">00</span> :
+                <span class="minutes">00</span> :
+                <span class="seconds">00</span> :
+                <span class="milliseconds">000</span>
+            </div>
+            <div class="buttons">
+                <button type="button" id="start">Start</button>
+                <button type="button" id="stop">Stop</button>
+                <button type="button" id="reset">Reset</button>
+            </div>
+        </div>
         <script type="module" src="./src/init.js"></script>
     </body>
 </html>
